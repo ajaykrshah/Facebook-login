@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/btn_fblogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="159dp"
+        android:layout_marginEnd="75dp" />
+
+    <view
+        android:id="@+id/view_profile"
+        class="com.facebook.login.widget.ProfilePictureView"
+        id="@+id/view"
+        layout_alignParentBottom="true"
+        layout_alignParentEnd="true"
+        layout_centerVertical="true"
+        layout_marginBottom="81dp"
+        layout_marginEnd="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="119dp"
+        android:layout_marginTop="71dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="113dp"
+        android:layout_marginTop="202dp"
+        android:text="TextView"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:typeface="monospace"
+        android:visibility="invisible"
+        app:fontFamily="serif" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="97dp"
+        android:text="Address - "
+        android:textSize="14sp"
+        android:typeface="serif"
+        app:fontFamily="sans-serif" />
+</RelativeLayout>
